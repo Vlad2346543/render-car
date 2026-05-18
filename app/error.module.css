@@ -1,0 +1,17 @@
+.goBack {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  margin: 32px 0;
+}
+.icon {
+  stroke: var(--color-black);
+}
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}

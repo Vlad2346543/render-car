@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  max-width: 1440px; 
+  margin: 0 auto;   
+  border-bottom: 1px solid var(--color-white);
+  background-color: var(--color-white);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLogo {
+  display: block;
+  padding: 24px 0;
+}
+
+.headerNav {
+  display: flex;      
+  align-items: center;
+  gap: 32px;
+}
+
+.headerNavLink {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  transition: color 250ms ease-in-out;
+}
+
+.headerNavLink:hover,
+.headerNavLink:focus {
+  color: var(--color-blue);
+}
+
+.headerNavLinkActive {
+  color: var(--color-blue);
+}

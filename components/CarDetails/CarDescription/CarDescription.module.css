@@ -1,0 +1,152 @@
+.firstRow {
+  margin-bottom: 35px;
+}
+
+.head {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.id {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-gray);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.33333;
+  color: var(--color-lightblue);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.descr {
+  margin: 0 auto;
+  max-width: 488px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+.secondRow {
+  margin-bottom: 40px;
+}
+.condHead {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.condition {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.thirdRow {
+  margin-bottom: 40px;
+}
+.specificationsTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.specifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.specific {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.featuresTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1200px) {
+  .firstRow {
+    margin-bottom: 68px;
+  }
+  .secondRow,
+  .thirdRow {
+    margin-bottom: 110px;
+  }
+  .price {
+    margin-bottom: 32px;
+  }
+  .head,
+  .location,
+  .price,
+  .descr,
+  .condHead,
+  .condition,
+  .specificationsTitle,
+  .specific,
+  .featuresTitle,
+  .feature {
+    text-align: left;
+  }
+  .location {
+    justify-content: flex-start;
+  }
+  .conditions,
+  .specifications,
+  .features {
+    align-items: flex-start;
+  }
+}

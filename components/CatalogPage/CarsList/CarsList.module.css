@@ -1,0 +1,105 @@
+.carsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.carCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 424px;
+  
+  width: calc((100% - 96px) / 4);
+}
+
+.carImageWrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.carHeartIcon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  fill: var(--color-crema);
+  transition: fill 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.carHeartIcon:hover,
+.carHeartIcon:focus,
+.carHeartIcon:active {
+  fill: var(--color-lightblue); 
+}
+
+.carImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.carCardDescr {
+  margin-bottom: 24px;
+}
+
+.carMainInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.carTitle,
+.carPrice {
+  max-width: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.carModel {
+  color: var(--color-lightblue);
+}
+
+.carDetailsRow {
+  font-size: 12px;
+  line-height: 1.33333;
+  color: var(--color-gray);
+  margin-bottom: 4px;
+}
+
+.carDetailTag {
+  display: inline-block;
+  padding: 0 6px;
+  border-right: 1px solid var(--color-lightgrey);
+}
+
+
+.carDetailTag:last-child {
+  border-right: none;
+}
+
+.carButton {
+  margin-top: auto; 
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px;
+  height: 44px;
+  background-color: var(--color-lightblue);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--color-white);
+  transition: background-color 250ms ease-in-out; 
+}
+
+.carButton:hover,
+.carButton:focus,
+.carButton:active { 
+  background-color: var(--color-blue);
+}
