@@ -2,13 +2,8 @@ import { getServerApi } from '@/lib/api/serverApi';
 import { isAxiosError } from 'axios';
 import { NextRequest, NextResponse } from 'next/server';
 
-interface Props {
-  params: {
-    carId: string;
-  };
-}
 
-export async function POST(request: NextRequest, { params }: Props) {
+export async function POST( request: NextRequest, { params }: { params: Promise<{ carId: string }> }) {
   try {
     const api = await getServerApi();
     const { carId } = await params;
