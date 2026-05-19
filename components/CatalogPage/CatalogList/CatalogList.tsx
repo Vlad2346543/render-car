@@ -66,9 +66,9 @@ export default function CatalogPageClient() {
     }
   }, [isError]);
 
-  if (isError) {
-    throw new Error('Failed to load cars');
-  }
+if (isError) {
+  return <p>Failed to load cars</p>;
+}
 
   return (
     <section className={css.catalog}>

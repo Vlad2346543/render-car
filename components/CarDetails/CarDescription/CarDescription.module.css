@@ -1,152 +1,103 @@
-.firstRow {
-  margin-bottom: 35px;
+.descWrapper {
+  width: 100%;
 }
 
-.head {
+/* Перша секція (Заголовок, локація, ціна, опис) */
+.descFirstRow {
+  margin-bottom: 68px;
+}
+
+.descHead {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33333;
   margin-bottom: 8px;
-  text-align: center;
+  text-align: left;
 }
 
-.id {
+.descModelAccent {
+  color: var(--color-lightblue); /* Якщо потрібно виділити модель кольором */
+}
+
+.descId {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: var(--color-gray);
+  margin-left: 8px;
 }
 
-.location {
+.descLocation {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 16px;
-  text-align: center;
+  text-align: left;
+  color: var(--color-gray);
 }
 
-.price {
+.descMileage {
+  margin-left: 8px;
+}
+
+.descPrice {
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
   line-height: 1.33333;
   color: var(--color-lightblue);
-  margin-bottom: 16px;
-  text-align: center;
+  margin-bottom: 32px;
+  text-align: left;
 }
 
-.descr {
-  margin: 0 auto;
+.descText {
   max-width: 488px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-  text-align: center;
-}
-.secondRow {
-  margin-bottom: 40px;
-}
-.condHead {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  margin: 0;
 }
 
-.conditions {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-}
-.condition {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-}
-.thirdRow {
+/* Блоки списків (Умови, Характеристики, Аксесуари) */
+.descSecondRow,
+.descThirdRow,
+.descFourthRow {
   margin-bottom: 40px;
 }
-.specificationsTitle {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  text-align: center;
+
+/* Останній блок робимо без нижнього маржина */
+.descFourthRow {
+  margin-bottom: 0;
 }
 
-.specifications {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-.specific {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-}
-.featuresTitle {
+.descTitle {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
-.features {
+
+.descList {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 16px;
+  align-items: flex-start;
+  padding: 0;
+  list-style: none;
 }
-.feature {
+
+.descItem {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px; /* Трохи збільшив gap для іконок, щоб виглядало вільніше */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-}
-@media screen and (min-width: 1200px) {
-  .firstRow {
-    margin-bottom: 68px;
-  }
-  .secondRow,
-  .thirdRow {
-    margin-bottom: 110px;
-  }
-  .price {
-    margin-bottom: 32px;
-  }
-  .head,
-  .location,
-  .price,
-  .descr,
-  .condHead,
-  .condition,
-  .specificationsTitle,
-  .specific,
-  .featuresTitle,
-  .feature {
-    text-align: left;
-  }
-  .location {
-    justify-content: flex-start;
-  }
-  .conditions,
-  .specifications,
-  .features {
-    align-items: flex-start;
-  }
+  text-align: left;
 }

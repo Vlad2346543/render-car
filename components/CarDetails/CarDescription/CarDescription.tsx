@@ -10,66 +10,66 @@ import { PiGearThin } from 'react-icons/pi';
 interface CarDetailsDescriptionProps {
   car: Car;
 }
-export default function CarDetailsDescription({
-  car,
-}: CarDetailsDescriptionProps) {
+export default function CarDetailsDescription({ car }: CarDetailsDescriptionProps) {
   return (
-    <div className={css.desscriptionWrapper}>
-      <div className={css.firstRow}>
-        <h3 className={css.head}>
-          <span className={css.partHead}>{car.brand}</span>{' '}
-          <span className={css.partHead}>{car.model},</span>{' '}
-          <span className={css.partHead}>{car.year}</span>{' '}
-          <span className={css.id}>{`id: ${car.stockNumber}`}</span>
+    <div className={css.descWrapper}>
+      <div className={css.descFirstRow}>
+        <h3 className={css.descHead}>
+          <span>{car.brand}</span>{' '}
+          <span className={css.descModelAccent}>{car.model},</span>{' '}
+          <span>{car.year}</span>{' '}
+          <span className={css.descId}>{`id: ${car.stockNumber}`}</span>
         </h3>
-        <p className={css.location}>
+        <p className={css.descLocation}>
           <HiOutlineLocationMarker size={16} />
           <span>
-            {car.location?.city},{car.location?.country}
+            {car.location?.city}, {car.location?.country}
           </span>
-          <span>{`Mileage: ${car.mileage}`}</span>
+          <span className={css.descMileage}>{`Mileage: ${car.mileage}`}</span>
         </p>
-        <p className={css.price}>${car.rentalPrice}</p>
-        <p className={css.descr}>{car.description}</p>
+        <p className={css.descPrice}>${car.rentalPrice}</p>
+        <p className={css.descText}>{car.description}</p>
       </div>
 
-      <div className={css.secondRow}>
-        <h4 className={css.condHead}>Rental Conditions:</h4>
-        <ul className={css.conditions}>
+      <div className={css.descSecondRow}>
+        <h4 className={css.descTitle}>Rental Conditions:</h4>
+        <ul className={css.descList}>
           {car.rentalConditions?.map((condition, index) => (
-            <li key={index} className={css.condition}>
+            <li key={index} className={css.descItem}>
               <CiCircleCheck size={16} />
               {condition}
             </li>
           ))}
         </ul>
       </div>
-      <div className={css.thirdRow}>
-        <h4 className={css.specificationsTitle}>Car Specifications:</h4>
-        <ul className={css.specifications}>
-          <li className={css.specific}>
+
+      <div className={css.descThirdRow}>
+        <h4 className={css.descTitle}>Car Specifications:</h4>
+        <ul className={css.descList}>
+          <li className={css.descItem}>
             <IoCalendarOutline size={16} />
             {`Year: ${car.year}`}
           </li>
-          <li className={css.specific}>
+          <li className={css.descItem}>
             <FaCar size={16} />
             {`Type: ${car.type}`}
           </li>
-          <li className={css.specific}>
+          <li className={css.descItem}>
             <BsFuelPump size={16} />
             {`Fuel Consumption: ${car.fuelConsumption}`}
           </li>
-          <li className={css.specific}>
+          <li className={css.descItem}>
             <PiGearThin size={16} />
             {`Engine Size: ${car.engine}`}
           </li>
         </ul>
       </div>
-      <div className={css.fourthRow}>
-        <h4 className={css.featuresTitle}>Accessories and functionalities:</h4>
-        <ul className={css.features}>
+
+      <div className={css.descFourthRow}>
+        <h4 className={css.descTitle}>Accessories and functionalities:</h4>
+        <ul className={css.descList}>
           {car.features?.map((feature, index) => (
-            <li key={index} className={css.feature}>
+            <li key={index} className={css.descItem}>
               <CiCircleCheck size={16} />
               {feature}
             </li>
